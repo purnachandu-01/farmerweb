@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm2Fair — AI-Powered Agricultural Supply Chain Assistant | SIH 2026</title>
+  <meta name="description" content="AI-powered agricultural supply-chain assistance connecting farmers, buyers and consumers through fair pricing, smart logistics and transparent markets. Smart India Hackathon 2026." />
+  <meta name="keywords" content="Farm2Fair, AgriTech, Smart India Hackathon, Fair Price, AI Agriculture, Group Logistics, Price Transparency, Farmers" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Top Hackathon Banner -->
+  <div class="hackathon-banner">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <span class="badge">SIH 2026</span>
+      <span>Smart India Hackathon Prototype • Problem Statement: AI-Powered Agricultural Supply Chain</span>
+    </div>
+    <div class="actions">
+      <button class="btn-demo-pill" id="top-banner-demo-btn">
+        ⚡ Launch Judge Walkthrough Demo
+      </button>
+    </div>
+  </div>
+
+  <!-- Sticky Top Navigation Header -->
+  <header class="header-main" id="main-nav">
+    <!-- Rendered dynamically by js/app.js -->
+  </header>
+
+  <!-- Main Dynamic SPA Page Container -->
+  <main id="app-root">
+    <!-- Views rendered dynamically here -->
+  </main>
+
+  <!-- Global Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Mobile Bottom Navigation Bar (Shown on Mobile Viewports) -->
+  <nav class="mobile-bottom-nav" id="mobile-nav">
+    <div class="mobile-nav-items">
+      <button class="mobile-nav-item" data-view="landing">
+        <span style="font-size:1.2rem;">🏠</span>
+        <span>Home</span>
+      </button>
+      <button class="mobile-nav-item" data-view="farmer-dashboard">
+        <span style="font-size:1.2rem;">👨‍🌾</span>
+        <span>Farmer</span>
+      </button>
+      <button class="mobile-nav-item" data-view="ai-price">
+        <span style="font-size:1.2rem;">📊</span>
+        <span>AI Price</span>
+      </button>
+      <button class="mobile-nav-item" data-view="marketplace">
+        <span style="font-size:1.2rem;">🛒</span>
+        <span>Market</span>
+      </button>
+      <button class="mobile-nav-item" data-view="group-logistics">
+        <span style="font-size:1.2rem;">🚚</span>
+        <span>Transit</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Global Footer -->
+  <footer class="footer-main">
+    <div class="footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+          <div style="width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg, var(--primary-500), var(--tech-500)); display:flex; align-items:center; justify-content:center; color:white; font-weight:800;">F2F</div>
+          <h3 style="margin:0; font-size:1.3rem;">Farm2<span>Fair</span></h3>
+        </div>
+        <p>
+          AI-Powered Agricultural Supply Chain Assistant designed for Smart India Hackathon 2026.
+          Empowering farmers with fair price intelligence, shared logistics, and transparent market access.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Core Modules</h4>
+        <ul class="footer-links">
+          <li><a href="#landing" onclick="window.farm2fairApp.navigateTo('landing')">Home</a></li>
+          <li><a href="#farmer-dashboard" onclick="window.farm2fairApp.navigateTo('farmer-dashboard')">Farmer Dashboard</a></li>
+          <li><a href="#ai-price" onclick="window.farm2fairApp.navigateTo('ai-price')">AI Fair-Price Model</a></li>
+          <li><a href="#smart-matching" onclick="window.farm2fairApp.navigateTo('smart-matching')">Smart Buyer Matching</a></li>
+          <li><a href="#group-logistics" onclick="window.farm2fairApp.navigateTo('group-logistics')">Group Transportation</a></li>
+        </ul>
+      </div>
+
+      <!-- Solutions -->
+      <div class="footer-col">
+        <h4>Intelligence Tools</h4>
+        <ul class="footer-links">
+          <li><a href="#price-transparency" onclick="window.farm2fairApp.navigateTo('price-transparency')">Price Transparency Flow</a></li>
+          <li><a href="#smart-storage" onclick="window.farm2fairApp.navigateTo('smart-storage')">Storage Advisor (Sell or Store)</a></li>
+          <li><a href="#unsold-rescue" onclick="window.farm2fairApp.navigateTo('unsold-rescue')">Unsold Crop Rescue</a></li>
+          <li><a href="#demand-insights" onclick="window.farm2fairApp.navigateTo('demand-insights')">Demand Insights</a></li>
+          <li><a href="#consumer-marketplace" onclick="window.farm2fairApp.navigateTo('consumer-marketplace')">Consumer Direct</a></li>
+        </ul>
+      </div>
+
+      <!-- Project details -->
+      <div class="footer-col">
+        <h4>SIH 2026 Prototype</h4>
+        <ul class="footer-links">
+          <li><a href="#about" onclick="window.farm2fairApp.navigateTo('about')">About Farm2Fair</a></li>
+          <li><a href="#" onclick="window.farm2fairApp.launchJudgeDemo(); return false;">Judge Walkthrough Demo</a></li>
+          <li><a href="#admin-dashboard" onclick="window.farm2fairApp.navigateTo('admin-dashboard')">Operations Telemetry</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Farm2Fair Team — Smart India Hackathon 2026 Prototype. Built for Indian Agriculture.</div>
+      <div style="display:flex; gap:16px;">
+        <span>Prototype Demonstration</span>
+        <span>•</span>
+        <span>Zero Hidden Markups</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Bootstrap Module -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
